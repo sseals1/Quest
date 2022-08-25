@@ -19,6 +19,22 @@ namespace Quest
             Awesomeness = 50;
         }
 
+        // immutable property
+        public Robe colorfulRobe { get; }
+        // constructor parameter to the Adventurer class to accept a Robe and to set the ColorfulRobe property
+        public Adventurer(Robe robe)
+        {
+            colorfulRobe = colorfulRobe;
+        }
+
+
+        // Method returns a string witht he adventurer's name and description of the their robe.
+        public void GetDescription()
+        {
+            Console.WriteLine($"The adventurer's name is: {Adventurer.Name} and their robe is: {Robe.Lenght}");
+        }
+
+
 
         // This method returns a string that describes the Adventurer's status
         // Note one way to describe what this method does is:
